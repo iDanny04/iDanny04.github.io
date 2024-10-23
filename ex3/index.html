@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Indicação da linguagem -->
+<!-- ©Daniela Almeida, 2024-10-02,  LDC, FBAUP -->
+<!-- A personagem que escolhi foi a Jinx do jogo League of Legends -->
+
+<!-- Não visível -->
+<title>My first webpage Jinx uhu!</title>
+<meta name="Jinx Website" content="Exercício 2 Web Design, FBAUP, LDC">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Muda o estilo da pagina-->
+    <style>
+
+
+        /*titulo*/
+        header{
+            background-color: #b3a3ec;
+            font-family: Arial, sans-serif;
+            
+        }
+ 
+
+        /*fonte,margem,organizar o conteudo, cor de fundo*/
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            display: flex;
+            flex-direction: column;
+            background-color: #b3a3ec; 
+        }
+
+        /*tamanho do menu de navegacao, cor e espacamento*/
+        nav {
+            padding: 25px;
+            width: 97%;
+            background-color: #937edd;
+            text-align: center;
+            height: auto;
+            
+        }
+
+        nav ul {
+            list-style-type: none;  /* Remove os marcadores de lista */
+            padding: 0;
+            margin: 0;
+            display: flex;  
+            justify-content: space-around; 
+        }
+        
+        nav a {
+            text-decoration: none; /* Remove o sublinhado */
+            color: #000; /* Define a cor  dos links */
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+        /*hover nos links ter uma animacao*/
+        nav a:hover {
+            color: #f9f9f9;  
+            transition: color 0.3s ease; /* Efeito de transição suave */
+        }
+
+        /*cor da data*/
+        .data-atual {
+            color: #0d0d0d; 
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* organizar o conteudo, main ocupa o espaco livre, espaçamento interno, cor background */
+        main {
+            display: flex; 
+            flex: 1; 
+            padding: 15px; 
+            background-color: #b3a3ec; 
+        }
+
+        /* area ocupa 3 partes, espacamento */
+        .content {
+            flex: 3; 
+            padding: 20px; 
+        }
+        
+        /* tamanho do título principal, espacamento abaixo do titulo */
+        main h1 {
+            font-size: 2em; 
+            margin-bottom: 20px; 
+        }
+
+        /* aumenta o espaçamento entre linhas e paragrafos */
+        main p {
+            line-height: 1.2; 
+            margin: 15px 0; 
+        }
+
+        /* organizar o conteudo, main ocupa o espaco livre, espaçamento interno, cor background, borda, centrar o texto */
+        aside {
+            width: 450px; 
+            padding: 20px;
+            background-color: #8d80d7; 
+            margin-left: 20px; 
+            text-align: center;
+        }
+
+        /* centraliza o texto do rodapé, espacamento, tamanho, cor */
+        footer {
+            padding: 2px; 
+            padding-top: 10px;
+            padding-bottom: 20px;
+            font-size: 1em;
+            background-color: #8d80d7;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none; /* Remove o sublinhado */
+            color: #000; 
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            
+        }
+
+        footer a:hover {
+            color: #f9f9f9;  
+            transition: color 0.3s ease; /* Efeito de transição suave */
+        }
+
+        footer ul {
+            list-style-type: none;  /* Remove os marcadores de lista */
+            display: flex;  
+            justify-content: space-around; /* Distribui horizontalmente*/
+            padding-left: 100px;
+        }
+
+
+        main h2:hover {
+            color: #0000ff;  
+            transition: color 0.3s ease; /* Efeito de transição suave */
+        }
+
+        main h3:hover {
+            transition: color 0.3s ease; /* Efeito de transição suave */
+        }
+
+        /*imagens com escala automatica*/
+        img {
+            width: 70%;
+            max-width: 400px;
+            height: auto;
+            display: block;
+            margin:0 auto;
+        }
+
+    
+
+
+        /*tabela*/
+        table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        border: 4px solid #937edd; /* Adiciona borda da tabela */
+        }
+        /*linhas*/
+        th, td {
+            border: 3px solid #937edd; /* Borda para as células */
+            padding: 8px; /* Espaçamento interno */
+            text-align: left; /* Alinhamento do texto */
+        }
+        /*linha de cima */
+        th {
+            background-color: #937edd; 
+        }
+
+        /*imagem com legenda*/
+        figure {
+            text-align: center; 
+        
+        }
+
+        video {
+            display: block;
+            margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+            max-width: 100%; /* Garante que o vídeo não ultrapasse a largura da tela */
+            height: auto; /* Mantém a proporção do vídeo */
+        }
+
+        audio {
+            width: 100%; /* O player de áudio ocupa toda a largura do contêiner */
+            outline: none; 
+        }
+
+        
+
+        /*fim do style*/
+    </style>
+    <!-- Fim da head -->
+</head>
+    
+<body>
+
+    <!-- h1 titulo -->
+    <header>
+        <h1>&nbsp;&nbsp;&nbsp;<em>Jinx (League of Legends)</em>
+        </h1>
+    </header>
+
+    <!-- !!!!!!!!!!!!!!!!Menu de Navegacao!!!!!!!!!!!!!!!! -->
+    <nav>
+        
+        
+
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#criaçao">Concept and creation</a></li>
+            <li><a href="#outrasligaçoes">Appearances</a></li>
+            <li><a href="#representaçao">Reception</a></li>
+            
+        </ul>
+        
+        
+    </nav>
+    <!-- !!!!!!!!!!!!!!!!fim do menu de Navegacao!!!!!!!!!!!!!!!! -->
+    <main>
+        <!-- !!!!!!!!!!!!!!!!seccao do centro!!!!!!!!!!!!!!!! -->
+        <div class="content">
+
+            <section id="intro">
+                <h2>Introduction</h2> <!-- secção 1 -->
+                <article>
+                    <h3>Jinx <ins>(Powder)</ins></h3> <q>But He Didn't Make Jinx.<del>You Did</del>.</q>
+                    <strong>Jinx</strong> is a character in Riot Games' <em>League of Legends</em> <abbr>(lol)</abbr> media franchise. She was introduced as a playable champion in the October 2013 update for the 2009 video game of the same name, which was complemented by the animated music video "Get Jinxed" to commemorate her official debut. Jinx is depicted as a manic and impulsive criminal from Zaun who serves as the archenemy of the Piltover enforcer Vi. The Netflix animated series Arcane explores the character's origin story as <strong>Powder</strong>, Vi's younger sister who, following a series of family tragedies, is taken in and raised by the crime lord Silco.
+
+                        <blockquote>Jinx has become&nbsp;one of the franchise's most popular and iconic characters since her introduction. Her portrayal in Arcane has garnered critical acclaim</blockquote>  
+                </article>
+            </section>
+
+            <section id="criaçao">
+                <h2>Concept and creation</h2> <!-- secção 2 -->
+                <article>
+                <p>Illustrator Katie De Sousa posted conceptual artwork of the "gun-toting, braid-rocking criminal" that would ultimately become Jinx on a bulletin board for potential ideas at <strong>Riot</strong> Games. De Sousa wanted to create a "completely insane female villain who is beyond any kind of reform or rehabilitation" for League of Legends. De Sousa was also a fan of "Attack Damage Carry" (ADC), a term used to describe champions that deal high levels of continuous damage in matches. The character was given the codename "Psycho Arsenal" and remained on the board for months until August Browning, seeking to make a weapon-swapping ADC, decided to develop her with De Sousa, while her backstory was written by Graham McNeill. They avoided giving her a "sexy persona" and instead depicted her as a pale and slender woman who wielded disproportionately oversized weapons to make her stand out from other female League champions. The Joker, Gollum, and actress Helena Bonham Carter served as primary inspirations for Jinx's character.
+
+                    To commemorate Jinx's in-game debut, an animated music video starring the character titled "Get Jinxed" was released on the League of Legends YouTube channel. Jinx would officially join <em>League of Legends</em> in the October 2013 update. Sarah Anne Williams provided the character's voice for most of the games and videos she featured in. Jinx's origin was later expanded upon when she was adapted by Christian Linke and Alex Yee for the animated streaming series Arcane. The first season was released on Netflix in November 2021. Ella Purnell voices Jinx in the series, while Mia Sinclair Jenness voices a younger version of the character in Act 1.</p>
+                </article>
+            </section>
+
+            <section id="outrasligaçoes">
+                <br><br> 
+                <h2>Appearances</h2>  <!-- secção 3 -->
+                <article> 
+                    <h3>League of Legends</h3> <!-- subcapítulo 1 -->
+                    <p>Jinx was added as a playable champion to the marksman roster of League of Legends in October 2013. As established in the lore written by Graham McNeill, Jinx was once a young innocent girl from Zaun, the seedy underbelly of the utopian city of Piltover. She harbors a dark and mysterious past with Vi, another champion from the game. Following a childhood tragedy, Jinx grew up to become "manic and impulsive" and her capacity for creating mayhem "became the stuff of legend". Her most notorious crimes include releasing a stampede of exotic animals, disrupting trade by lining the city's bridges with destructive explosives, and pulling a heist on one of Piltover's most secure treasuries. The game's developers ensured the character moved quickly during gameplay to portray her chaotic personality and energy.
+
+                        Jinx's primary weapons include her minigun nicknamed "Pow-Pow"; her shock pistol "Zapper"; her explosive grenades called "Flame Chompers"; and her customized rocket launcher dubbed "Fishbones" for its shark-inspired design.
+                        
+                        Jinx's alternate character skins in the game originate from parallel realities separate from the main lore. In the "Odyssey" universe, Jinx is a member of an intergalactic crew that travels the cosmos. In the "Star Guardian" universe, she is part of a magical girl squad. Jinx's design from Arcane was also adapted as an alternate skin in League of Legends.</p>
+                        <br><br> 
+                        <h3>Arcane</h3>    <!-- subcapítulo 2 -->
+                        <p>The first season of Arcane reveals that Jinx was originally named Powder. She and her older sister Vi were orphaned following the repressed undercity's failed uprising against the utopian city of Piltover, after which they were taken in by Vander, the leader of the rebellion.
+
+                            At the start of the series, Powder and Vi rob a penthouse owned by scientist Jayce Talis in Piltover. Powder steals a set of arcane crystals and accidentally causes an explosion. They escape back to the undercity but the enforcers of Piltover relentlessly search for the culprit. Vander turns himself in to protect them only to be taken by Silco, his former brother-in-arms. Powder follows Vi and her foster brothers, Mylo and Claggor, when they leave to rescue Vander and, attempting to help them fend off Silco's forces, uses the stolen crystals to cause a massive explosion that results in the deaths of Vander, Mylo and Claggor. In her grief, Vi hits Powder and calls her a "jinx" before walking away. Believing herself to be abandoned, Powder seeks comfort in Silco's arms.
+                            
+                            Years later, a teenage Powder goes by the name Jinx, having been raised by Silco as his daughter. Silco has taken control of the undercity, now called Zaun, and Jinx helps to smuggle the chemical stimulant "Shimmer" into Piltover for Silco's second revolt. After a job goes awry due to the interference of insurgents known as the Firelights, Jinx attempts to impress Silco by stealing an arcane "Hextech" gemstone from Jayce, killing six enforcers in the process. Silco asks Jinx to weaponize the gemstone and advises her to let go of her past trauma, while rookie enforcer Caitlyn Kiramman recruits Vi, who has been imprisoned for years, to help track Jinx down. As Jinx turns on Vi upon realizing that she is working with Caitlyn, the Firelights intervene and take the gemstone.
+                            
+                            Jinx kills the enforcers on the bridge connecting Zaun to Piltover and recovers the gemstone, though she is grievously wounded during an encounter with Ekko, the Firelights' leader and her childhood friend. Silco finds Jinx and brings her to Singed, a scientist who injects her with Shimmer to heal her injuries. Jinx hallucinates Vi and Caitlyn inflicting her pain so she kidnaps them both. She abducts Silco as well upon overhearing him lament choosing between Zaun's independence and her as part of an ultimatum offered to him by Jayce. Jinx forces Vi to choose between Caitlyn and herself. Both Vi and Silco appeal to Jinx, causing her to suffer a panic attack. Silco breaks free and almost shoots Vi before Jinx, in a manic fit, guns him down. In his final moments, Silco reaffirms he never would have betrayed Jinx and comforts her by telling her that she is "perfect". Jinx finally accepts her new identity and, having weaponized the gemstone to power a rocket launcher, fires at the Piltover council just as they approve to grant Zaun its independence.</p>
+                            <br><br>
+                            <!-- !!!!!!!!!!!TABELA!!!!!!!!!!! -->
+                            <table>
+                                <tr>
+                                    <th>Número</th>
+                                    <th>Título</th>
+                                    <th>Data</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>"Welcome to the Playground"</td>
+                                    <td rowspan="3">November 6, 2021</td> <!-- Une as linhas 2, 3 e 4 -->
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>"Some Mysteries Are Better Left Unsolved"</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>"The Base Violence Necessary for Change"</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>"Happy Progress Day!"</td>
+                                    <td rowspan="3">November 13, 2021</td> <!-- Une as linhas 5, 6 e 7 -->
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>"Everybody Wants to Be My Enemy"</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>"When These Walls Come Tumbling Down"</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>"The Boy Savior"</td>
+                                    <td rowspan="3">November 20, 2021</td> <!-- Une as linhas 8, 9 e 10 -->
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>"Oil and Water"</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>"The Monster You Created"</td>
+                                </tr>
+                            </table>
+                            <br><br>
+
+                            <video width="600" controls>
+                                <source src="Arcane _ Official Trailer _ Netflix.mp4" type="video/mp4">
+                            </video>
+                            
+                            <br><br>
+                        <h3>Music videos</h3> <!-- subcapítulo 3 -->
+                        <p>Jinx was one of the first champions from League of Legends to star in her own animated music video in the lead-up to her in-game debut. "Get Jinxed" by Agnete Kjølsrud from the band Djerv, which follows Jinx's destructive exploits in Piltover, was released on YouTube on October 8, 2013.
+
+                            Jinx later appeared as the central character of the music video "Enemy" by Imagine Dragons and JID, which depicts "the parts of [Jinx's] childhood that led her to a life of crime". "Enemy" was released on YouTube on October 28, 2021, to promote Arcane, in addition to serving as the series' title track.</p>
+                         <br><br> 
+                         <audio controls>
+                            <source src="Get Jinxed (ft. Djerv)  Official Music Video - League of Legends.mp3" type="audio/mpeg">
+                        </audio>
+                        <br><br> 
+                            <h3>Other appearances</h3> <!-- subcapítulo 4 -->
+                        <p>Jinx has also featured in various League of Legends spin-off games, including Teamfight Tactics, Legends of Runeterra, and League of Legends: Wild Rift. As promotion for Arcane, Jinx was added as a playable character in PUBG Mobile, Fortnite, and Among Us.
+
+                            Jinx appears as a coach in the video game Just Dance 2023 Edition for the song Playground by Bea Miller, portrayed by Céline Baron, as well as an Avatar for players.</p>
+                
+                </article>
+            </section>
+
+            <section id="representaçao"> <!-- secção 4 -->
+                <br><br> 
+                <h2>Reception</h2>
+                <article>
+                
+                    <p>Jinx is often labeled as a "fan-favorite" and one of the most iconic champions from League of Legends, and has become one of the most popular video game characters for fanart and cosplay. Dot Esports attributes Jinx's continued popularity towards the "Get Jinxed" music video and her "magnetic" design. PC Gamer listed Jinx as the 23rd most iconic character in PC gaming, citing her as the mascot for League of Legends. Jinx has been featured in multiple videos for Riot Games' League of Legends YouTube channel, and was even the focal point of the cinematic launch trailer for the mobile game League of Legends: Wild Rift.
+
+                        Jinx's portrayal in Arcane garnered widespread acclaim from critics and fans. Rafael Motamayor of IGN described the character as "compelling" and "what keep[s] you engaged episode after episode". Fans have lauded the series' serious treatment of Jinx's mental illness to make her a more tragic character, rather than using it as a quirk for comedy. Similarities have been noted between Jinx's characterization in Arcane and the DC Comics supervillain the Joker (who served as an inspiration for Jinx from the League of Legends game), specifically with regards to her actions in the season finale.
+                        
+                        The vocal performances of Ella Purnell and Mia Sinclair Jenness as Jinx and young Powder, respectively, received significant praise from critics; Purnell won the Annie Award for Outstanding Achievement for Voice Acting in an Animated Television / Broadcast Production for her performance in the sixth episode of Arcane.</p>
+                </article>
+            </section>
+            <br><br> 
+            <div class="data-atual"><p id="data-atual"></p></div>
+            <!-- !!!!!!!!!!!!!!!!Ligacao relativa para uma imagem da pasta!!!!!!!!!!!!!!!! -->
+            <img src="ceea4b54f32875615939394374c2c108.png" alt="imagem da jinx na pasta link">
+        </div>
+        <!-- !!!!!!!!!!!!!!!!fim  da seccao do centro!!!!!!!!!!!!!!!! -->
+        
+        <!-- !!!!!!!!!!!!!!!!seccao Aside!!!!!!!!!!!!!!!! -->
+        <aside>
+            <h2><strong><ins>Jinx</ins></strong></h2>
+            <hr>
+            <p><ins>More information</ins></p>
+            
+            <!-- figura -->
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Jinx-artwork-lol.png/220px-Jinx-artwork-lol.png" alt="Jinx">
+                <br><br>
+                <!-- legenda da figura -->
+                <figcaption><em>Jinx.</em></figcaption>
+            </figure>
+            <br><br> 
+            <hr>
+            <br><br> 
+            <p><b>Game:</b> <em>League of Legends</em></p>
+            <p><b>Created by:</b> <em>Katie De Sousa, Graham McNeill</em></p>
+            <p><b>Designed:</b> <em>Katie De Sousa, August Browning</em></p>
+            <p><b>Voiced by:</b> <em>	Sarah Anne Williams, Mia Sinclair Jenness, Ella Purnell</em></p>
+            <p><b>Family:</b> <em>	Vi (sister), Silco (adoptive father)</em></p>
+            <p><b>Origin:</b> <em>	Zaun (formerly the undercity of Piltover)</em></p>
+            <br><br>
+            <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/ArcaneJinx.jpeg/200px-ArcaneJinx.jpeg" alt="Jinx" width="180" height="auto">
+                <br><br>
+                <!-- legenda da figura -->
+                <figcaption><em>Arcane Jinx.</em></figcaption>
+            </figure>
+            <br><br>
+            <br><br> 
+            <br><br>
+            <!-- video do youtube com botao (partilhar-incorporar) -->
+            <iframe width="400" height="260" src="https://www.youtube.com/embed/0nlJuwO0GDs?si=POfkUwMaRizF2o0Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br><br>
+            <a><em>Get Jinxed VideoClip</em></a>
+            <br><br>
+            <figure>
+                <img src="https://cdn.discordapp.com/attachments/1261164504939626498/1291164623646625812/mod.png?ex=66ff1a42&is=66fdc8c2&hm=15b1bcac66c2c5cadfa7ef1ccf629d4712c10bbde87292149f8201074b3c4239&" alt="Jinx" width="50" height="auto">
+            </figure>
+            
+
+            
+        </aside>
+        <!-- !!!!!!!!!!!!!!!!fim  da seccao do aside!!!!!!!!!!!!!!!! -->
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="mailto:exemplo@dominio.com">Contact us</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Jinx_(League_of_Legends)">Visit original Wikipedia</a></li>
+            <li><a href="https://www.leagueoflegends.com/pt-br/">League of Legends website</a></li>
+        </ul>
+        <a>&copy; 2024 League of Legends Wikipedia</a>
+    </footer>
+
+    <!-- !!!!!!!!!!!!!!!!data atual + formatacao da data !!!!!!!!!!!!!!!! -->
+    <script>
+        // Obtém a data atual
+        const hoje = new Date();
+
+        // Formata (DD/MM/AAAA)
+        const opcoes = { day: '2-digit', month: '2-digit', year: 'numeric' };
+        const dataFormatada = hoje.toLocaleDateString('pt', opcoes);
+
+        // Exibe a data formatada no elemento HTML
+        document.getElementById('data-atual').textContent = dataFormatada;
+    </script>
+
+</body>
+</html>
+
