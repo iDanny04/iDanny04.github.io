@@ -1,0 +1,440 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family:titillium web,Verdana,sans-serif;/*fonte escolhida*/
+    margin:0 auto;
+    color:#753a99;
+    text-align:justify;
+    
+}
+
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size:16px;
+	color: #676a81;
+	background: #1E1E1E;
+    max-width:1920px;
+    margin:0 auto;
+	overflow-x:hidden;
+}
+
+
+
+p {
+	margin: 0;
+	line-height:1.8;
+	color:#43485c;
+	font-size:14px;
+	font-family: 'Poppins', sans-serif;/*fonte escolhida*/
+}
+
+
+
+html,body{
+    height: 100%;
+	position: relative;
+}
+
+.welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    background:url(sitting-down-jinx.gif)no-repeat;/*imagem*/
+    background-size:cover;
+    background-position: center;
+    height:890px;
+    
+}
+.welcome:before{
+    position:absolute;
+    content: " ";
+    top:0;
+    left:0;
+    background:rgba(20, 8, 31, 0.65);/*escurecer a imagem*/
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+
+.header-text {
+    position: relative; /* Position context for text */
+    z-index: 2; /* Ensure text is above the overlay */
+    text-align: center; /* Center text */
+    color: #ffffffaf; /* Text color */
+}
+
+/*.header-text-area*/
+.header-text h2 {
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+.header-text h2 span {color: #ffffffaf;}/*cor das virgulas e pontos da intro*/
+
+.header-text p {
+    color: #ffffffaf;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 30px 0 60px;
+    letter-spacing: 1px;
+}
+
+.concept{
+    position:relative;
+    background:url(falling-to-the-ground-jinx.gif)no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+.concept:before{
+    position:absolute;
+    content: " ";
+    top:0;
+    left:0;
+    background:rgba(20, 8, 31, 0.89);
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+
+.concept p,h2{
+    font-size: 20px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    vertical-align: middle; /* Align text vertically */
+    padding-left: 100px;
+    padding-right: 100px;
+    word-spacing: -1.5px;
+    position: relative;
+    line-height: 1.5;
+    z-index: 2;
+    
+}
+
+
+.arcane{
+    position:relative;
+    background:url(jinx-arcane2.gif)no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+
+
+.arcane:before{
+    position:absolute;
+    content: " ";
+    top:0;
+    left:0;
+    background:rgba(20, 8, 31, 0.781);
+    width:100%;
+    height:100%;
+    z-index: 1;
+}
+
+.arcane p,h3{
+    font-size: 20px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    vertical-align: middle; /* Align text vertically */
+    padding-left: 100px;
+    padding-right: 100px;
+    word-spacing: -1.5px;
+    position: relative;
+    line-height: 1.5;
+    z-index: 2;
+    
+}
+
+
+/*.header-text-area*/
+
+/*FIM DE HEADERRRRRRRRRRRRRRRRRRRRRRRRR*/
+
+nav {
+    padding: 25px;
+    width: 100%;
+    background-color: #622f72fa;
+    text-align: center;
+    height: auto;
+}
+
+
+
+nav ul {
+    list-style-type: none;  /* Remove os marcadores de lista */
+    padding: 0;
+    margin: 0;
+    display: flex;  
+    justify-content: space-around; 
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000000; /* Define a cor  dos links */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    
+}
+/* Quando a tela fica menor diminui o tamanho da letra para tudo encaixar */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 16px; 
+    }
+}
+/* Quando a tela fica ainda  menor diminui o tamanho da letra para tudo encaixar */
+@media (max-width: 576px) {
+    nav a {
+        font-size: 14px; 
+    }
+}
+
+/*hover nos links ter uma animacao*/
+nav a:hover {
+    color: #f9f9f9;  
+    transition: color 0.3s ease; /* Efeito de transição suave */
+    
+    
+}
+
+
+
+.content h2 {
+    
+    color: #999fb3;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+.content h3{
+    font-size: 25px;
+    color: #999fb3;
+    
+    vertical-align: middle; /* Align text vertically */
+    padding-left: 100px;
+    padding-right: 100px;
+    word-spacing: -1.5px;
+    line-height: 1.5;
+
+}
+
+.content p{
+    font-size: 20px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    vertical-align: middle; /* Align text vertically */
+    padding-left: 100px;
+    padding-right: 100px;
+    word-spacing: -1.5px;
+    line-height: 1.5;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .content p{
+        font-size: 18px; 
+    }
+
+    .content h2{
+        font-size: 21px; 
+    }
+
+    .content h3{
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .content p{
+        font-size: 13px; 
+    }
+
+    .content h2{
+        font-size: 19px; 
+    }
+
+    .content h3{
+        font-size: 16px; 
+    }
+}
+
+
+
+
+
+.animated-border-box, .animated-border-box-glow{
+    
+    max-width: width;
+    height: 52%;
+    width: 97%;
+    position: absolute;
+    overflow: hidden; 
+    z-index: 0;
+    /* Border Radius */
+    border-radius: 5px;
+  }
+  
+  .animated-border-box-glow{
+    overflow: hidden;
+    /* Glow Blur */
+    filter: blur(40px);
+  }
+  
+  .animated-border-box:before, .animated-border-box-glow:before {
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    /*border color, change middle color*/
+    background-image: conic-gradient(rgba(0,0,0,0), #569ffd, rgba(0,0,0,0) 25%);
+    /* change speed here */
+    animation: rotate 4s linear infinite;
+    
+  }
+  
+  .animated-border-box:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* border width */
+    left: 5px;
+    top: 5px;
+    /* double the px from the border width left */
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    /*bg color*/
+    background: #292a2e;
+    /*box border radius*/
+    border-radius: 7px;
+    
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: translate(-50%, -50%) rotate(1turn);
+    }
+  }
+
+  .center-box{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D1E22;
+    
+    
+    
+  }
+
+  table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    color: #9e92d3;/*cor do texto da tabela*/
+    border: 4px solid #9e92d3; /* Adiciona borda da tabela */
+    }
+    /*linhas*/
+    th, td {
+        border: 3px solid #9e92d3; /* Borda para as células */
+        padding: 8px; /* Espaçamento interno */
+        text-align: left; /* Alinhamento do texto */
+        
+    }
+    /*linha de cima */
+    th {
+        background-color: #9e92d3; 
+    }
+
+    figure {
+        text-align: center; 
+    
+    }
+    
+    video {
+        display: block;
+        margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+        max-width: 100%; /* Garante que o vídeo não ultrapasse a largura da tela */
+        height: auto; /* Mantém a proporção do vídeo */
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+        max-width: 100%; /* Garante que o vídeo não ultrapasse a largura da tela */
+        max-height: 100%;
+        padding-bottom: 70px;
+    }
+    
+    audio {
+        width: 100%; /* O player de áudio ocupa toda a largura do contêiner */
+        outline: none; 
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    footer {
+        padding: 2px; 
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 1em;
+        background-color: #8d80d7;
+        text-align: center;
+    }
+    
+    footer a {
+        text-decoration: none; /* Remove o sublinhado */
+        color: #000; 
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        
+        
+    }
+    
+    footer a:hover {
+        color: #f9f9f9;  
+        transition: color 0.3s ease; /* Efeito de transição suave */
+    }
+    
+    footer ul {
+        list-style-type: none;  /* Remove os marcadores de lista */
+        display: flex;  
+        justify-content: space-around; /* Distribui horizontalmente*/
+        padding-left: 100px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    @media (max-width: 768px) {
+        footer a {
+            font-size: 13px; 
+        }
+    }
+
+    
+
+   
